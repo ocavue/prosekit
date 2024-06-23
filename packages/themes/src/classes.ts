@@ -172,9 +172,22 @@ export const IMAGE_RESIZEALE_HANDLE = cn(
 
 export const DROP_CURSOR = cn('transition-all bg-blue-500')
 
-export const BLOCK_HANDLE = cn(
-  'flex items-center box-border justify-center my-[0.5em] h-[1.5em] w-[1.2em] hover:bg-secondary rounded text-muted-foreground/50 transition',
+export const BLOCK_HANDLE_POPOVER = cn(
+  'flex items-center box-border justify-center my-2 text-muted-foreground/50 transition',
   PRESENCE_ANIMATE,
+)
+
+/**
+ * @deprecated
+ */
+export const BLOCK_HANDLE = BLOCK_HANDLE_POPOVER
+
+export const BLOCK_HANDLE_BUTTON = cn(
+  'box-border border-none hover:bg-secondary rounded flex items-center justify-center bg-transparent transition-colors p-0.5',
+)
+export const BLOCK_HANDLE_DRAG_HANDLE = cn(
+  BLOCK_HANDLE_BUTTON,
+  'py-0.5 px-0 cursor-grab',
 )
 
 export const TOOLTIP_TRIGGER = cn('block')
@@ -227,6 +240,7 @@ export const ICON_LIST_DEDENT = cn('i-lucide-indent-decrease h-5 w-5')
 export const ICON_CODE_BLOCK = cn('i-lucide-square-code h-5 w-5')
 export const ICON_CORNER_HANDLE = cn('i-lucide-arrow-down-right h-4 w-4')
 export const ICON_DRAG_HANDLE = cn('i-lucide-grip-vertical h-5 w-5')
+export const ICON_PLUS = cn('i-lucide-plus h-5 w-5')
 export const ICON_SEARCH = cn('i-lucide-search h-5 w-5')
 export const ICON_CLOSE = cn('i-lucide-x h-5 w-5')
 export const ICON_ARROW_LEFT = cn('i-lucide-arrow-left h-5 w-5')

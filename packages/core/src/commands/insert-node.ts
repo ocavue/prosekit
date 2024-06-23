@@ -45,7 +45,7 @@ function insertNode(
 
     if (dispatch) {
       const tr = state.tr.insert(insertPos, node)
-      setSelectionAround(tr, insertPos + node.nodeSize)
+      setSelectionAround(tr, insertPos + node.nodeSize - 1)
       dispatch(tr)
     }
     return true
