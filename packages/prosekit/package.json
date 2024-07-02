@@ -148,7 +148,7 @@
     "react": ">= 18.2.0",
     "react-dom": ">= 18.2.0",
     "solid-js": ">= 1.7.0",
-    "svelte": ">= 3.0.0",
+    "svelte": ">= 5.0.0",
     "vue": ">= 3.0.0"
   },
   "peerDependenciesMeta": {
@@ -181,7 +181,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "solid-js": "^1.8.17",
-    "svelte": "^4.2.18",
+    "svelte": "^5.0.0-next.166",
     "tsup": "^8.1.0",
     "typescript": "^5.5.2",
     "vue": "^3.4.30"
